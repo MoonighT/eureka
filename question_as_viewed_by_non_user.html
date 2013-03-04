@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+        <style type="text/css">
+            body {
+                padding-top: 0px;
+                padding-bottom: 0px;
+            }
+            .sidebar-nav {
+                padding: 9px 0;
+            }
+            .navbar input {
+                width: 40%;
+                margin-top: 5px;
+                margin-left: 40px;
+            }
+            .navbar .nav-collapse {
+                height: 30px;
+            }
+            .activity {
+            }
+            .activity img {
+                height: 50px;
+                width: 50px;
+            }
+            input.search-query {
+                margin-top: 7px
+            }
+            .tag-table td {
+                border-bottom: 1px dotted #E0E0E0;
+                padding-bottom: 12px;
+                padding-right: 6px;
+                padding-top: 6px;
+                vertical-align: top;
+                width: 200px;
+            }
+            .tag-table tr {
+                margin-top: 10px
+            }
+            .item-multiplier {
+                font-size: 120%;
+                font-weight: bold;
+            }
+            .like-multiplier, .answer-multiplier {
+                height: 50px;
+                padding-top: 10px;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                margin-right: 5px;
+            }
+            .like-multiplier {
+                background-color: #0080C0;
+                color: white;
+            }
+            .answer-multiplier {
+                background-color: #E0FFFF;
+                color: black;
+            }
+            .like-multiplier strong, .answer-multiplier strong {
+                font-size: 250%;
+            }
+            .challenge td {
+                vertical-align: top;
+            }
+            .challenge img {
+                width: 50px;
+                height: 50px;
+            }
+            .tags .btn {
+                margin-right: 8px;
+            }
+            .well-hr {
+                border-top-width: 1px;
+                border-top-style: solid;
+                border-top-color: #CCC;
+                border-bottom-width: 1px;
+                border-bottom-style: solid;
+                border-bottom-color: #EEE;
+                margin: 10px 0; 
+            }
+
+            #navigation {
+                position: fixed;
+                top: 0;
+                width: 960px;
+                margin: 0px auto;
+                color: #FFFFFF;
+                height: 40px;
+                text-align: left;
+                /* Adds shadow to the bottom of the bar */
+                -webkit-box-shadow: 0px 0px 8px 0px #000000;
+                -moz-box-shadow: 0px 0px 8px 0px #000000;
+                box-shadow: 0px 0px 8px 0px #000000;
+                /* Adds the transparent background */
+                background-color: rgba(1, 1, 1, 0.8);
+                color: rgba(1, 1, 1, 0.8);
+                display: inline;
+            }
+            #navigation a {
+                font-size: 14px;
+                padding-left: 15px;
+                padding-right: 15px;
+                color: black;
+                text-decoration: none;
+
+            }
+
+            #navigation a:hover {
+                color: grey;
+            } 
+ 
+            #navigation img {
+                width: 170px;
+                height: 40px
+            }
+
+        </style>
+    </head>
+    <body>
+        <div style="width:960px; margin:0px auto; position:relative; margin-bottom:20px; background:#000000">
+            <div style="width:620px; margin-left:40px; float:right">
+                <h3 style="margin-top: 60px; color: #FFD700">
+                    Join the fun social learning platform to crowd source solutions and solve challenging academic questions!
+                </h3>
+            </div>
+            <div style="width:300px">
+                <img src="img/latest_logo.png" width="300px" height="180px">
+            </div>
+        </div>
+        <div class="container" style="width:960px; margin:0px auto">
+            <div class="alert alert-block">
+              <button type="button" class="close" data-dismiss="alert">×</button>
+              <h4>Unfortunately!</h4>
+              Since you are not registered as an Eureka user, you are unable to post answers or like others' answers. <span><a href="#">Join Eureka</a></span> to crowd source solutions and solve challenging academic questions!
+            </div>
+
+            <div id="poster">
+                <div style="width:960px; margin:10px auto">
+                    <div class="pull-right">
+                        <p align="right">Posted on:</p>
+                        <p align="right" style="font-size:14px"><b>25 Aug 2012 11:10pm</b></p>
+                    </div>
+                    <div style="width:65%">
+                        <img src="img/logo.png" width="50px" height="50px" style="float:left; margin-right:10px; margin-top:0px">
+                        <a style="margin-top:10px; font-size:18px" href="#">Jason Tan</a>
+                        <p style="font-size:12px; font-style:italic; margin-bottom:0px">National University of Singapore</p>
+                        <p style="margin-top:0px">312<span><img src="img/eureka_on_32.png" width="16px" height="16px"></span><a href="#"> Primary 4</a></p>  
+                    </div>
+                </div>
+            </div>
+
+            <div class="well" style="margin-top:10px" id="question">
+                <div>
+                    <p style="float:right; margin-top:5px">312</p>   
+                    <img src="img/eureka_off_32.png" width="32px" height="32px" style="float:right">
+                    <h2 style="margin-bottom:10px">Why 1 + 1 = 2?</h2>
+                </div>
+                <div>
+                    <button class="btn" style="float:left; margin-left:0px">University 1</button>
+                    <button class="btn" style="margin-left:10px; margin-bottom:10px">Mathematics</button>
+                </div>
+                <div>
+                    <p>Can anyone explain why 1+1 is 2? I am really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really confused with this.... :(</p>
+                </div>
+            </div>
+
+                    
+            <div>
+                <div>
+                    <ul class="unstyled" id="answers">
+                        <li>
+                            <div class="well" style="margin-top:20px" id="answer-content">
+                                <div>
+                                    <p>This is because </p>
+                                </div>
+                                <hr class="well-hr"/>  
+                                <div>
+                                    <table width="100%">
+                                        <tr>
+                                            <td width="50px">
+                                                <img src="img/answer_accepted_200.png" width="50px" height="50px">
+                                            </td>
+                                            <td width="100px">
+                                                <h3 align="left">Accepted</h3>
+                                            </td>
+                                            <td width="32px">
+                                                <img src="img/eureka_off_32.png" width="32px" height="32px" style="float:right">
+                                            </td>
+                                            <td width="10px">
+                                                <p style="float:right; margin-top:5px">0</p>
+                                            </td>
+                                            <td>
+                                                <div align="right">
+                                                    <a style="margin-right:0px; margin-top:5px; font-size:18px" href="#">Benjamin Yep</a> 
+                                                </div>
+                                                <p style="font-size:12px; font-style:italic; margin-bottom:0px" align="right">National University of Singapore</p>
+
+                                                <p style="margin-top:0px" align="right">312<span><img src="img/eureka_on_32.png" width="16px" height="16px"></span><a href="#"> Primary 4</a></p>
+                                            </td>
+                                            <td width="60px">
+                                                <img src="img/logo.png" width="50px" height="50px" style="float:right; margin-left:10px">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div> 
+                            </div>
+                        </li>
+                        <li>
+                            <div class="well" style="margin-top:20px" id="answer-content">
+                                <div>
+                                    <p>i dont give a damn shit about this stupic question   </p>
+                                </div>   
+                                <hr class="well-hr"/>  
+                                <div>
+                                    <table width="100%">
+                                        <tr>
+                                            <td width="32px">
+                                                <img src="img/eureka_off_32.png" width="32px" height="32px" style="float:right">
+                                            </td>
+                                            <td width="10px">
+                                                <p style="float:right; margin-top:5px">0</p>
+                                            </td>
+                                            <td>
+                                                <div align="right">
+                                                    <a style="margin-right:0px; margin-top:5px; font-size:18px" href="#">Benjamin Yep</a> 
+                                                </div>
+                                                <p style="font-size:12px; font-style:italic; margin-bottom:0px" align="right">National University of Singapore</p>
+
+                                                <p style="margin-top:0px" align="right">312<span><img src="img/eureka_on_32.png" width="16px" height="16px"></span><a href="#"> Primary 4</a></p>
+                                            </td>
+                                            <td width="60px">
+                                                <img src="img/logo.png" width="50px" height="50px" style="float:right; margin-left:10px">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>   
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        <?php
+        global $exclude_facebook_js;
+        $exclude_facebook_js = true;
+        require_once '../element/include_js.php';
+        ?>
+   </body>
+</html>

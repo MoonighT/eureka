@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+        <style type="text/css">
+            body {
+                padding-top: 60px;
+                padding-bottom: 40px;
+            }
+            .sidebar-nav {
+                padding: 9px 0;
+            }
+            .navbar input {
+                width: 40%;
+                margin-top: 5px;
+                margin-left: 40px;
+            }
+            .navbar .nav-collapse {
+                height: 30px;
+            }
+            .activity {
+            }
+            .activity img {
+                height: 50px;
+                width: 50px;
+            }
+            input.search-query {
+                margin-top: 7px
+            }
+            .tag-table td {
+                border-bottom: 1px dotted #E0E0E0;
+                padding-bottom: 12px;
+                padding-right: 6px;
+                padding-top: 6px;
+                vertical-align: top;
+                width: 200px;
+            }
+            .tag-table tr {
+                margin-top: 10px
+            }
+            .item-multiplier {
+                font-size: 120%;
+                font-weight: bold;
+            }
+            .like-multiplier, .answer-multiplier {
+                height: 50px;
+                padding-top: 10px;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                margin-right: 5px;
+            }
+            .like-multiplier {
+                background-color: #0080C0;
+                color: white;
+            }
+            .answer-multiplier {
+                background-color: #E0FFFF;
+                color: black;
+            }
+            .like-multiplier strong, .answer-multiplier strong {
+                font-size: 250%;
+            }
+            .challenge td {
+                vertical-align: top;
+            }
+            .challenge img {
+                width: 50px;
+                height: 50px;
+            }
+            .tags .btn {
+                margin-right: 8px;
+            }
+            .well-hr {
+                border-top-width: 1px;
+                border-top-style: solid;
+                border-top-color: #CCC;
+                border-bottom-width: 1px;
+                border-bottom-style: solid;
+                border-bottom-color: #EEE;
+                margin: 10px 0; 
+            }
+
+            #navigation {
+                position: fixed;
+                top: 0;
+                width: 960px;
+                margin: 0px auto;
+                color: #FFFFFF;
+                height: 40px;
+                text-align: left;
+                /* Adds shadow to the bottom of the bar */
+                -webkit-box-shadow: 0px 0px 8px 0px #000000;
+                -moz-box-shadow: 0px 0px 8px 0px #000000;
+                box-shadow: 0px 0px 8px 0px #000000;
+                /* Adds the transparent background */
+                background-color: rgba(1, 1, 1, 0.8);
+                color: rgba(1, 1, 1, 0.8);
+                display: inline;
+            }
+            #navigation a {
+                font-size: 14px;
+                padding-left: 15px;
+                padding-right: 15px;
+                color: black;
+                text-decoration: none;
+
+            }
+
+            #navigation a:hover {
+                color: grey;
+            } 
+ 
+            #navigation img {
+                width: 170px;
+                height: 40px
+            }
+
+        </style>
+    </head>
+    <body>
+        <div style="width:960px; margin:0 auto; position:relative, height:">
+            <div id="navigation">
+                <a href="#" style="float:left"><img src="img/nav_bar_logo.png"></a>
+                <div class="dropdown" style="float:right; padding-right:15px; padding-top:6px">
+                    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="icon-user"></i>Username
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Profile</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Sign Out</a></li>
+                    </ul>
+                </div>
+                <form style="float:left">
+                    <input type="text" class="search-query" placeholder="Search posts, answer and friends">
+                    <button type="submit" class="btn"><i class="icon-search"></i></button>
+                </form> 
+                <a href="#" style="float:left; margin-top:6px"><button class="btn">Ask question</button></a>       
+            </div>
+        </div>
+ 
+        <div class="container" style="width:960px; margin:0px auto">
+            <h2>Point System</h2>
+            <table>
+                <tr>
+                    <td><b>Degree</b></td>
+                    <td><b>Required points</b></td>
+                    <td><b>Description</b></td>
+                </tr>
+                <tr>
+                    <td>Kindergarten</td>
+                    <td>0<span><img src="img/eureka_on_16.png"></span></td>
+                    <td>You are still a newly registered user! Do explore the rich faetures of Eureka and start answering questions posted by other users!</td>
+                </tr>
+                <tr>
+                    <td>Primary</td>
+                    <td>25<span><img src="img/eureka_on_16.png"></span></td>
+                    <td>Well done! You have taken the very first step by posting high quality answers. Try to find a interesting topic that you are good at and gain more points!</td>
+                </tr>
+                <tr>
+                    <td>Secondary</td>
+                    <td>75<span><img src="img/eureka_on_16.png"></span></td>
+                    <td>You have differentiated youself from a lot of other users! Keep up and help more people with their academics!</td>
+                </tr>
+                <tr>
+                    <td>Junior College</td>
+                    <td>150<span><img src="img/eureka_on_16.png"></span></td>
+                    <td>Good job! By now you should have some expertises in certain areas. University is just ahead and do speed up!</td>
+                </tr>
+                <tr>
+                    <td>Undergraduate</td>
+                    <td>300<span><img src="img/eureka_on_16.png"></span></td>
+                    <td>You are doing really great in academics and look pretty good in the ranking! Please don't slow down your pace and continue providing more quality posts!</td>
+                </tr>
+                <tr>
+                    <td>Masters</td>
+                    <td>500<span><img src="img/eureka_on_16.png"></span></td>
+                    <td>As the title indicates, you are now a truly master at academics! One more level up and you will be at the top of the world!</td>
+                </tr>
+                <tr>
+                    <td>PhD</td>
+                    <td>1000<span><img src="img/eureka_on_16.png"></span></td>
+                    <td>Congratulations! You are now amongst the most knowledgable people in Eureka! But the journey of study never ends here! Do offer your gentle assistance to more people!</td>
+                </tr>
+            </table>
+            <h2>How to gain <span><img src="img/eureka_on_32.png"></span>?</h2>
+        </div>
+                    
+
+        <script src="js/jquery-1.8.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/eureka.js"></script>
+
+   </body>
+</html>

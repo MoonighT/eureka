@@ -1,0 +1,174 @@
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.sidebar-nav {
+    padding: 9px 0;
+}
+
+.navbar input {
+    width: 40%;
+    margin-top: 5px;
+    margin-left: 40px;
+}
+
+.navbar .nav-collapse {
+    height: 30px;
+}
+
+img.fb-picture {
+    height: 50px;
+    width: 50px;
+}
+
+img.accept-status {
+    width: 50px;
+    height: 50px;
+}
+
+img.bulb-big {
+    width: 32px;
+    height: 32px;
+}
+
+img.bulb-small {
+    width: 16px;
+    height: 16px;
+}
+
+input.search-query {
+    margin-top: 7px
+}
+.item-multiplier {
+    font-size: 120%;
+    font-weight: bold;
+}
+.like-multiplier, .answer-multiplier {
+    height: 40px;
+    padding-top: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-right: 5px;
+}
+.like-multiplier {
+    background-color: #0080C0;
+    color: white;
+}
+.answer-multiplier {
+    background-color: #E0FFFF;
+    color: black;
+}
+.like-multiplier strong, .answer-multiplier strong {
+    font-size: 200%;
+}
+.challenge td {
+    vertical-align: top;
+}
+.categories .btn {
+    margin-right: 8px;
+    margin-bottom: 5px;
+}
+.loading {
+    background-image: url('../img/loading.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-top: 50px;
+    height: 128px;
+}
+
+.invite-item {
+    margin: 5px -5px;
+    padding: 5px 0;
+    border-bottom: thin dotted gray;
+}
+
+.invite-item:nth-child(2) {
+    border-top: thin dotted gray;
+}
+
+.invite-item img {
+    margin-right: 5px;
+}
+
+.question-item+hr {
+    margin: 10px 0
+}
+
+.required-sign {
+    color: red
+}
+
+input[type="text"].error, textarea.error{
+    border-color: #B94A48;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #B94A48;
+}
+
+.question-container img.bulb-big {
+    float: right;
+}
+
+.question-container a.btn {
+    margin-right: 10px
+}
+
+.question-container {
+    margin-top: 10px;
+}
+
+.answer-container img.bulb-big {
+    float: right;
+}
+
+.answer-container {
+    margin-top: 20px;
+}
+
+.username {
+    margin-right: 0px;
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.answer-container .fb-picture {
+    margin-left: 10px;
+}
+
+.answer-container hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.answer-container.well {
+    padding: 10px 19px
+}
+
+#quick-answer-form textarea {
+    width: 99%;
+}
+
+#quick-answer-form [type="submit"] {
+    display: none;
+    margin-right: 10px;
+}
+
+#quick-answer-form {
+    margin-bottom: 10px;
+}
+
+.thumb-up-multiplier {
+    float: right;
+    margin-top: 10px;
+}
+
+.ranking-list div[class*="span"] {
+    margin-left: 20px;
+}
+
+.ranking-degree {
+    text-align: right;
+    font-size: 0.85em;
+    color: grey;
+}
